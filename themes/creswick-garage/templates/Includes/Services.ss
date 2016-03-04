@@ -3,7 +3,7 @@
         <h1 class="services_header">$Section_title</h1>
 
         <div class="col-lg-12">
-            <div class="col-lg-3 hidden-sm hidden-xs services_left">
+            <div class="col-lg-3 col-md-3 col-sm-6 services_left">
                 <% loop $Services %>
                     <h1 id="$ID" class="services_left_title">$Service_title</h1>
                 <% end_loop %>

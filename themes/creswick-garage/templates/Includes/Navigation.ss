@@ -29,14 +29,14 @@
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-                <% loop $Menu(1) %>
-                    <li class="$LinkingMode"><a href="$Link" title="$Title">$MenuTitle</a></li>
-                <% end_loop %>
                 <% if $Menu(2) %>
                     <% loop $Menu(2) %>
                         <li class="$LinkingMode $ClassName"><a href="#$ID" title="$Title">$MenuTitle</a></li>
                     <% end_loop %>
                 <% end_if %>
+                <% loop $Menu(1) %>
+                    <li class="$LinkingMode"><a href="$Link" title="$Title">$MenuTitle</a></li>
+                <% end_loop %>
             </ul>
         </div>
     </div>

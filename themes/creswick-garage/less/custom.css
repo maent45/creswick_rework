@@ -120,10 +120,6 @@ footer {
   text-align: center;
 }
 /* FORM */
-.UserDefinedForm > .container {
-  margin-top: 10%;
-  margin-bottom: 5%;
-}
 .UserDefinedForm > .container h1,
 .UserDefinedForm > .container h2,
 .UserDefinedForm > .container h3 {
@@ -159,38 +155,56 @@ footer {
   .navbar img {
     width: 160px;
   }
+  .banner .item {
+    min-height: 300px;
+  }
   .banner .carousel-caption {
     width: 285px;
     left: 10px;
-    top: 70px;
+    top: 130px;
     height: auto;
   }
   .banner .carousel-inner {
-    height: 35vh;
+    height: 270px;
+    background: #111;
   }
   .banner .carousel {
-    height: 35vh;
+    height: 270px;
   }
   .banner img {
-    top: 50px;
+    top: 80px;
+  }
+  .services .services_left h1 {
+    font-size: 16px;
+  }
+  .services .services_middle_detail {
+    margin-top: -10px;
+  }
+  .about .container img {
+    margin-top: 3%;
   }
   .services_header,
   .about_header {
+    margin-top: 30px;
     width: 90%;
+  }
+  .UserDefinedForm > .container {
+    margin-top: 100px;
+    margin-bottom: 5%;
   }
 }
 /* 480 > */
 @media only screen and (min-width: 480px) {
   .banner .carousel-caption {
     height: 200px;
-    left: 100px;
-    top: 425px;
+    left: 15px;
+    top: 90px;
   }
   .banner .carousel-inner {
-    height: 50vh;
+    height: 340px;
   }
   .banner .carousel {
-    height: 50vh;
+    height: 340px;
   }
   .services_header,
   .about_header {
@@ -211,14 +225,15 @@ footer {
   .navbar .navbar-nav {
     margin-top: 0px;
   }
+  .banner .carousel {
+    height: 435px;
+  }
+  .banner .carousel .carousel-inner {
+    height: 435px;
+  }
   .banner .carousel-caption {
     width: 500px;
-  }
-  .banner .carousel-inner {
-    height: 90vh;
-  }
-  .banner .carousel {
-    height: 90vh;
+    top: 110px;
   }
   .banner img {
     top: 80px;
@@ -226,5 +241,36 @@ footer {
   .services_header,
   .about_header {
     width: 35%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .about .container img {
+    width: 100%;
+    margin: auto;
+    margin-top: 25%;
+  }
+  .banner .carousel {
+    height: 540px;
+  }
+  .banner .carousel .carousel-inner {
+    height: 540px;
+  }
+  .banner .carousel .carousel-caption {
+    top: 310px;
+  }
+  .UserDefinedForm > .container {
+    margin-top: 130px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .banner .carousel {
+    height: 655px;
+  }
+  .banner .carousel .carousel-inner {
+    height: 655px;
+  }
+  .banner .carousel .carousel-caption {
+    top: 370px;
+    left: 100px;
   }
 }
