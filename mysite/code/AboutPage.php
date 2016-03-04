@@ -10,13 +10,13 @@ class AboutPage extends Page {
         'AboutDetails' => 'AboutPageObjects'
     );
 
-    // disallow from SiteTree top level
-    private static $can_be_root = false;
-
     public function getCMSFields() {
         $fields = parent::getCMSFields();
 
         $fields->removeFieldFromTab('Root.Main', 'Content');
+
+        $conf=GridFieldConfig_RelationEditor::create(10);
+        $conf->addComponent(new GridFieldSortableRows('SortOrder'));
 
         $fields->addFieldToTab('Root.Main', TextField::create(
             'Section_title',
@@ -27,7 +27,7 @@ class AboutPage extends Page {
             'AboutDetails',
             'About Details',
             $this->AboutDetails(),
-            GridFieldConfig_RecordEditor::create()
+            $conf
         ));
 
         return $fields;

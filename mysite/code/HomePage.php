@@ -9,6 +9,14 @@ class HomePage extends Page {
         'AboutPage'
     );
 
+    public function getCMSFields () {
+        $fields = parent::getCMSFields();
+
+        $fields->removeFieldFromTab('Root.Main','Content');
+
+        return $fields;
+    }
+
 }
 
 class HomePage_Controller extends Page_Controller {

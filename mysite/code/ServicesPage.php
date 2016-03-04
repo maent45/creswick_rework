@@ -6,9 +6,6 @@ class ServicesPage extends Page {
         'Section_title' => 'Varchar'
     );
 
-    // disallow from SiteTree top level
-    private static $can_be_root = false;
-
     private static $has_many = array (
         'Services' => 'ServicesPageObjects'
     );
@@ -23,11 +20,14 @@ class ServicesPage extends Page {
             'Section Title'
         ));
 
+        $conf=GridFieldConfig_RelationEditor::create(10);
+        $conf->addComponent(new GridFieldSortableRows('SortOrder'));
+
         $fields->addFieldToTab('Root.Services', GridField::create(
             'Services',
             'List of all Services',
             $this->Services(),
-            GridFieldConfig_RecordEditor::create()
+            $conf
         ));
 
         return $fields;

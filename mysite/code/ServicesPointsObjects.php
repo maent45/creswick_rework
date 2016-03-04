@@ -3,8 +3,11 @@
 class ServicesPointsObjects extends DataObject {
 
     private static $db = array (
-        'Service_covered' => 'Varchar'
+        'Service_covered' => 'Varchar',
+        'SortOrder' => 'Int'
     );
+
+    public static $default_sort = 'SortOrder';
 
     private static $has_one = array (
         'ServicesPageObjects' => 'ServicesPageObjects'

@@ -15,8 +15,8 @@
     $MetaTags(false)
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
     <![endif]-->
-    <% require themedCSS('bootstrap.min') %>
     <%--<link rel="shortcut icon" href="$ThemeDir/images/favicon.ico" />--%>
 </head>
 

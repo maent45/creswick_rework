@@ -2,8 +2,9 @@
 
 class BannerPage extends Page {
 
-    // disallow from SiteTree top level
-    private static $can_be_root = false;
+    private static $db = array (
+        'text' => 'Varchar'
+    );
 
     private static $has_many = array (
         'BannerImages' => 'BannerPageObjects'
@@ -13,6 +14,7 @@ class BannerPage extends Page {
         $fields = parent::getCMSFields();
 
         $fields->removeFieldFromTab('Root.Main', 'Content');
+        $fields->addFieldToTab('Root.Banners', TextField::create('text'));
 
         $fields->addFieldToTab('Root.Banners', GridField::create(
             'BannerImages',

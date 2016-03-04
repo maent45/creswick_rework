@@ -3,8 +3,11 @@
 class AboutPageObjects extends DataObject {
 
     private static $db = array (
-        'Info_details' => 'HTMLText'
+        'Info_details' => 'HTMLText',
+        'SortOrder' => 'Int'
     );
+
+    public static $default_sort = 'SortOrder';
 
     private static $has_one = array (
         'AboutPage' => 'AboutPage',

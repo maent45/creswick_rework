@@ -1,4 +1,4 @@
-<nav class="navbar navbar-inverse navbar-static-top">
+<nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container-fluid container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -8,18 +8,20 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#">Brand</a>
+            <a class="navbar-brand" href="#"></a>
         </div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
-                <li><a href="#">Link</a></li>
-            </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Link</a></li>
+                <% loop $Menu(1) %>
+                    <li class="$LinkingMode"><a href="$Link" title="$Title">$MenuTitle</a></li>
+                <% end_loop %>
+                <% if $Menu(2) %>
+                    <% loop $Menu(2) %>
+                        <li class="$LinkingMode $ClassName"><a href="#$ID" title="$Title">$MenuTitle</a></li>
+                    <% end_loop %>
+                <% end_if %>
             </ul>
-        </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
+        </div>
+    </div>
 </nav>

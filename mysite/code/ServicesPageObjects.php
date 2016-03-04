@@ -4,8 +4,11 @@ class ServicesPageObjects extends DataObject {
 
     private static $db = array (
         'Service_title' => 'Varchar',
-        'Service_details' => 'HTMLText'
+        'Service_details' => 'HTMLText',
+        'SortOrder' => 'Int'
     );
+
+    public static $default_sort = 'SortOrder';
 
     private static $has_one = array (
         'ServicesPage' => 'ServicesPage'
@@ -21,11 +24,14 @@ class ServicesPageObjects extends DataObject {
         $fields->addFieldToTab('Root.Main', TextField::create('Service_title', 'Service Title'));
         $fields->addFieldToTab('Root.Main', HtmlEditorField::create('Service_details', 'Service Details'));
 
+        $conf=GridFieldConfig_RelationEditor::create(10);
+        $conf->addComponent(new GridFieldSortableRows('SortOrder'));
+
         $fields->addFieldToTab('Root.Main', GridField::create(
             'ServicePoints',
             'Services Included',
             $this->ServicePoints(),
-            GridFieldConfig_RecordEditor::create()
+            $conf
         ));
 
         return $fields;
@@ -33,7 +39,7 @@ class ServicesPageObjects extends DataObject {
 
     private static $summary_fields = array (
         'Service_title' => 'Service',
-        'Service_details' => 'Details'
+        'Service_details' => 'Details.Summary'
     );
 
 }

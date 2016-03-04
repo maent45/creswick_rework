@@ -1,14 +1,78 @@
-@base: orange;
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web);
 
-.box-shadow(@style, @c) when (iscolor(@c)) {
-  -webkit-box-shadow: @style @c;
-  box-shadow:         @style @c;
+body {
+  font-family: 'Titillium Web', sans-serif;
 }
-.box-shadow(@style, @alpha: 50%) when (isnumber(@alpha)) {
-  .box-shadow(@style, rgba(0, 0, 0, @alpha));
+
+.services_header,
+.about_header {
+  color: white;
+  background: #f03034;
+  text-align: center;
+  width: 35%;
+  margin: auto;
+  margin-top: 50px;
+  padding: 10px;
+  border-top: 5px solid #333;
+  font-weight: 500;
 }
-.box {
-  color: saturate(@base, 5%);
-  border-color: lighten(@base, 30%);
-  div { .box-shadow(0 0 5px, 30%) }
+
+/* BANNER */
+.banner {
+  padding: 0px;
+
+  .carousel {
+    height: 70vh;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+/* SERVICES */
+.services {
+  background: #555;
+  color: white;
+
+  .services_middle_detail {
+    display: none;
+  }
+  .services_right_info {
+    //display: none;
+  }
+  .services_points_wrapper {
+    display: none;
+  }
+
+  .services_middle h1 {
+
+  }
+}
+
+/* ABOUT */
+.about {
+  background: white;
+  color: black;
+
+  .aboutLeftSection {
+    border-bottom: 2px solid red;
+  }
+
+  .container img {
+    width: 100%;
+    margin: auto;
+  }
+
+  .about_img_wrapper {
+    display: none;
+  }
+}
+
+
+/* FOOTER */
+footer {
+  background: #777;
+  padding: 20px;
+  margin-top: 50px;
 }
