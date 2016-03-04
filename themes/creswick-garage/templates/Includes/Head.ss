@@ -16,10 +16,11 @@
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <link href='https://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <![endif]-->
     <%--<link rel="shortcut icon" href="$ThemeDir/images/favicon.ico" />--%>
 </head>
 
-<body>
+<body class="$ClassName">
 
 <% include Navigation %>

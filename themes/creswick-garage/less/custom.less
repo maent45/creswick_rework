@@ -4,14 +4,45 @@ body {
   font-family: 'Titillium Web', sans-serif;
 }
 
+#scroll-bar-style::-webkit-scrollbar {
+  background: red;
+}
+#scroll-bar-style::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #f03034 !important;
+}
+
+/* NAVBAR */
+.navbar {
+  .navbar-nav {
+      font-size: 20px;
+  }
+  .navbar-brand {
+    padding: 10px;
+  }
+  .navbar_contact_holder {
+    background: #f03034;
+    height: auto;
+    padding: 5px;
+  }
+  .navbar_contact_holder p {
+    position: relative;
+    top: 0px;
+    width: 160px;
+    font-size: 16px;
+    color: white;
+    margin-bottom: 0px;
+    display: inline-block;
+  }
+}
+
 .services_header,
 .about_header {
   color: white;
   background: #f03034;
   text-align: center;
-  width: 35%;
   margin: auto;
-  margin-top: 50px;
+  margin-top: 80px;
   padding: 10px;
   border-top: 5px solid #333;
   font-weight: 500;
@@ -21,32 +52,59 @@ body {
 .banner {
   padding: 0px;
 
-  .carousel {
-    height: 70vh;
-  }
-
   img {
     width: 100%;
+    position: relative;
+  }
+
+  .carousel-caption {
+    background: rgba(0,0,0,0.4);
+    width: 500px;
+    text-align: start;
+    padding: 10px;
+    position: absolute;
+    left: 100px;
+    top: 425px;
+    border-radius: 3px;
+    text-shadow: rgba(0,0,0,0.4);
+    height: 200px;
+
+    h1,
+    h2,
+    h3,
+    h4 {
+      color: #f03034;
+    }
   }
 }
 
 /* SERVICES */
 .services {
+  background: url(../images/car1_mod.jpg) 50% 0 fixed no-repeat;
   background: #555;
   color: white;
+  padding-bottom: 50px;
 
+  .services_left h1 {
+    font-size: 36px;
+    border-bottom: 2px solid #f03034;
+    padding-bottom: 10px;
+  }
+  .services_middle {
+    text-align: center;
+  }
   .services_middle_detail {
     display: none;
+    margin-top: 20%;
   }
-  .services_right_info {
-    //display: none;
+  .services_right {
+    margin-top: 5%;
+    height: 315px;
+    overflow: scroll;
+    overflow-x: hidden;
   }
   .services_points_wrapper {
     display: none;
-  }
-
-  .services_middle h1 {
-
   }
 }
 
@@ -54,6 +112,7 @@ body {
 .about {
   background: white;
   color: black;
+  margin-bottom: 50px;
 
   .aboutLeftSection {
     border-bottom: 2px solid red;
@@ -69,10 +128,143 @@ body {
   }
 }
 
-
 /* FOOTER */
 footer {
-  background: #777;
-  padding: 20px;
-  margin-top: 50px;
+  background: #101010;
+  padding: 40px;
+  top: 0px;
+  color: #777777;
+  text-align: center;
+}
+
+/* FORM */
+.UserDefinedForm > .container  {
+  margin-top: 10%;
+  margin-bottom: 5%;
+
+  h1,
+  h2,
+  h3 {
+    color: #f03034;
+    font-weight: 600;
+  }
+}
+.UserDefinedForm #UserForm_Form {
+  input.text,
+  textarea.textarea {
+    width: 100%;
+    border-radius: 5px;
+    padding: 10px;
+  }
+
+  input.action,
+  input.resetformaction {
+    background: #f03034;
+    padding: 15px;
+    border-radius: 5px;
+    border: 0px;
+    font-weight: bold;
+    font-size: 16px;
+    margin-right: 5px;
+    margin-top: 20px;
+    color: white;
+  }
+}
+
+/* 320 > */
+@media only screen and (min-width: 310px) {
+
+  .navbar {
+    height: auto;
+
+    .navbar-brand {
+      width: 80%;
+    }
+    img {
+      width: 160px;
+    }
+  }
+
+  .banner {
+
+    .carousel-caption {
+      width: 285px;
+      left: 10px;
+      top: 70px;
+      height: auto;
+    }
+    .carousel-inner {
+      height: 35vh;
+    }
+    .carousel {
+      height: 35vh;
+    }
+    img {
+      top: 50px;
+    }
+  }
+
+  .services_header,
+  .about_header {
+    width: 90%;
+  }
+}
+
+/* 480 > */
+@media only screen and (min-width: 480px) {
+  .banner {
+    .carousel-caption {
+      height: 200px;
+      left: 100px;
+      top: 425px;
+    }
+    .carousel-inner {
+      height: 50vh;
+    }
+    .carousel {
+      height: 50vh;
+    }
+  }
+
+  .services_header,
+  .about_header {
+    width: 60%;
+  }
+}
+
+/* 768 > */
+@media only screen and (min-width: 768px) {
+  .navbar {
+    height: 90px;
+    .navbar-inverse .navbar-brand {
+      float: left;
+    }
+    img {
+      width: 100%;
+    }
+    .navbar-nav {
+      margin-top: 0px;
+    }
+  }
+
+  .banner {
+
+    .carousel-caption {
+      width: 500px;
+    }
+    .carousel-inner {
+      height: 90vh;
+    }
+    .carousel {
+      height: 90vh;
+    }
+    img {
+      top: 80px;
+    }
+  }
+
+  .services_header,
+  .about_header {
+    width: 35%;
+  }
 }

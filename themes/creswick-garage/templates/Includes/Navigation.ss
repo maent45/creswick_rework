@@ -1,4 +1,12 @@
 <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="navbar_contact_holder">
+        <% with $SiteConfig %>
+            <div class="container">
+                <i class="fa fa-mobile"></i><p>$Phone_number</p>
+                <i class="fa fa-envelope"></i><p>$Email</p>
+            </div>
+        <% end_with %>
+    </div>
     <div class="container-fluid container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -8,7 +16,15 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="#"></a>
+            <a class="navbar-brand" href="$BaseURL">
+                <% with $SiteConfig %>
+                    <% if $Nav_logo %>
+                        $Nav_logo
+                    <% else %>
+                        no logo uploaded
+                    <% end_if %>
+                <% end_with %>
+            </a>
         </div>
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">

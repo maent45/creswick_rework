@@ -23,8 +23,10 @@
                     <div class="col-lg-12 services_points_wrapper" id="$ID">
                         <% loop $ServicePoints %>
                             <span id="$ServicesPageObjectsID" class="services_right_info">
-                            <h3>$Service_covered</h3>
-                        </span>
+                                <ul id="scroll-bar-style">
+                                    <li>$Service_covered</li>
+                                </ul>
+                            </span>
                         <% end_loop %>
                     </div>
                 <% end_loop %>

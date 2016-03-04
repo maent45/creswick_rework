@@ -2,10 +2,19 @@
 class Page extends SiteTree {
 
 	private static $db = array(
+		'Section_title' => 'Varchar'
 	);
 
 	private static $has_one = array(
 	);
+
+	public function getCMSFields() {
+		$fields = parent::getCMSFields();
+
+		$fields->addFieldToTab('Root.Main', TextField::create('Section_title', 'Section Title'));
+
+		return $fields;
+	}
 
 }
 class Page_Controller extends ContentController {

@@ -9,3 +9,4 @@
         <% include About %>
     <% end_if %>
 <% end_loop %>
+<% include Map %>

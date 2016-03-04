@@ -10,7 +10,8 @@ module.exports = function(grunt) {
                     optimization: 2
                 },
                 files: {
-                    "themes/creswick-garage/css/custom.css" : "themes/creswick-garage/less/custom.less" // destination file and source file
+                    "themes/creswick-garage/css/custom.css" : "themes/creswick-garage/less/custom.less",
+                    "themes/creswick-garage/css/media-queris.css" : "themes/creswick-garage/less/media-queries.less"// destination file and source file
                 }
             }
         },
