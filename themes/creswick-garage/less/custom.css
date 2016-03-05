@@ -301,14 +301,17 @@ footer {
 }
 @media only screen and (min-width: 1200px) {
   .banner .carousel {
-    height: 655px;
+    height: 700px;
   }
   .banner .carousel .carousel-inner {
-    height: 655px;
+    height: 700px;
   }
   .banner .carousel .carousel-caption {
     top: 370px;
     left: 100px;
+  }
+  .banner .img {
+    top: 25px;
   }
   .services .services_left h1,
   .services .services_middle h1 {
