@@ -3,13 +3,13 @@
         <h1 class="services_header">$Section_title</h1>
 
         <div class="col-lg-12">
-            <div class="col-lg-3 col-md-3 col-sm-6 services_left">
+            <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 services_left">
                 <% loop $Services %>
                     <h1 id="$ID" class="services_left_title">$Service_title</h1>
                 <% end_loop %>
             </div>
 
-            <div class="col-lg-4 col-lg-offset-1 services_middle">
+            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 col-lg-offset-1 services_middle">
                 <% loop $Services %>
                     <div id="$ID" class="services_middle_detail">
                         <h1>$Service_title</h1>
@@ -18,7 +18,7 @@
                 <% end_loop %>
             </div>
 
-            <div class="col-lg-3 col-lg-offset-1 services_right">
+            <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12 col-lg-offset-1 services_right">
                 <% loop $Services %>
                     <div class="col-lg-12 services_points_wrapper" id="$ID">
                         <% loop $ServicePoints %>

@@ -7,9 +7,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/creswick-garage/css/custom.css" afterPath="$PROJECT_DIR$/themes/creswick-garage/css/custom.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/creswick-garage/less/custom.css" afterPath="$PROJECT_DIR$/themes/creswick-garage/less/custom.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/creswick-garage/less/custom.less" afterPath="$PROJECT_DIR$/themes/creswick-garage/less/custom.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/creswick-garage/templates/Includes/About.ss" afterPath="$PROJECT_DIR$/themes/creswick-garage/templates/Includes/About.ss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/creswick-garage/templates/Includes/Banner.ss" afterPath="$PROJECT_DIR$/themes/creswick-garage/templates/Includes/Banner.ss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/creswick-garage/templates/Includes/Navigation.ss" afterPath="$PROJECT_DIR$/themes/creswick-garage/templates/Includes/Navigation.ss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/creswick-garage/templates/Includes/Services.ss" afterPath="$PROJECT_DIR$/themes/creswick-garage/templates/Includes/Services.ss" />
     </list>
     <ignored path="creswick.iws" />
@@ -31,7 +28,7 @@
     <favorites_list name="creswick" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="vertical" split-proportion="0.5120773">
+    <splitter split-orientation="vertical" split-proportion="0.47342995">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="Banner.ss" pinned="false" current-in-tab="false">
@@ -39,16 +36,6 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="-0.6666667">
                   <caret line="1" column="83" selection-start-line="1" selection-start-column="83" selection-end-line="1" selection-end-column="83" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Services.ss" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/themes/creswick-garage/templates/Includes/Services.ss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-7.3333335">
-                  <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
                   <folding />
                 </state>
               </provider>
@@ -69,6 +56,16 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="-8.0">
                   <caret line="12" column="57" selection-start-line="12" selection-start-column="57" selection-end-line="12" selection-end-column="57" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="custom.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/themes/creswick-garage/javascript/custom.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -97,8 +94,8 @@
           <file leaf-file-name="custom.less" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/themes/creswick-garage/less/custom.less">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.38723403">
-                  <caret line="312" column="22" selection-start-line="312" selection-start-column="22" selection-end-line="312" selection-end-column="22" />
+                <state vertical-scroll-proportion="0.74407583">
+                  <caret line="376" column="25" selection-start-line="376" selection-start-column="25" selection-end-line="376" selection-end-column="25" />
                   <folding />
                 </state>
               </provider>
@@ -124,25 +121,15 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="config.yml" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/mysite/_config/config.yml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
         </leaf>
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="Navigation.ss" pinned="false" current-in-tab="true">
+          <file leaf-file-name="Navigation.ss" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/themes/creswick-garage/templates/Includes/Navigation.ss">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.13253012">
-                  <caret line="30" column="52" selection-start-line="30" selection-start-column="52" selection-end-line="30" selection-end-column="52" />
+                <state vertical-scroll-proportion="-2.5555556">
+                  <caret line="32" column="39" selection-start-line="32" selection-start-column="39" selection-end-line="32" selection-end-column="39" />
                   <folding />
                 </state>
               </provider>
@@ -173,6 +160,16 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="-0.0">
                   <caret line="0" column="233" selection-start-line="0" selection-start-column="233" selection-end-line="0" selection-end-column="233" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Services.ss" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/themes/creswick-garage/templates/Includes/Services.ss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.85714287">
+                  <caret line="20" column="42" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
                   <folding />
                 </state>
               </provider>
@@ -468,6 +465,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="creswick-garage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascript" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="creswick" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="creswick" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="mysite" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -598,7 +617,7 @@
     <frame x="-1" y="30" width="1368" height="739" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21223564" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18806647" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -871,14 +890,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/creswick-garage/javascript/custom.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="46" column="7" selection-start-line="46" selection-start-column="7" selection-end-line="46" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.50344825">
@@ -1007,26 +1018,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/themes/creswick-garage/javascript/custom.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/themes/creswick-garage/templates/Includes/Navigation.ss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13253012">
-          <caret line="30" column="52" selection-start-line="30" selection-start-column="52" selection-end-line="30" selection-end-column="52" />
+        <state vertical-scroll-proportion="-2.5555556">
+          <caret line="32" column="39" selection-start-line="32" selection-start-column="39" selection-end-line="32" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/creswick-garage/templates/Includes/Services.ss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.3333335">
-          <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+        <state vertical-scroll-proportion="0.85714287">
+          <caret line="20" column="42" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/themes/creswick-garage/less/custom.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38723403">
-          <caret line="312" column="22" selection-start-line="312" selection-start-column="22" selection-end-line="312" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.74407583">
+          <caret line="376" column="25" selection-start-line="376" selection-start-column="25" selection-end-line="376" selection-end-column="25" />
           <folding />
         </state>
       </provider>

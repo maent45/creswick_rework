@@ -4,12 +4,15 @@ body {
   font-family: 'Titillium Web', sans-serif;
 }
 
-#scroll-bar-style::-webkit-scrollbar {
-  background: red;
+.services_right::-webkit-scrollbar {
+  width: 6px;
 }
-#scroll-bar-style::-webkit-scrollbar-thumb {
+.services_right::-webkit-scrollbar-thumb {
   border-radius: 10px;
   background-color: #f03034 !important;
+}
+span.error {
+  color: #f03034;
 }
 
 /* NAVBAR */
@@ -89,6 +92,10 @@ body {
     font-size: 36px;
     border-bottom: 2px solid #f03034;
     padding-bottom: 10px;
+    &:hover {
+      color: #333;
+      cursor: pointer;
+    }
   }
   .services_middle {
     text-align: center;
@@ -100,7 +107,6 @@ body {
   .services_right {
     margin-top: 5%;
     height: 315px;
-    overflow: scroll;
     overflow-x: hidden;
   }
   .services_points_wrapper {
@@ -201,11 +207,18 @@ footer {
     }
   }
   .services {
+    padding-bottom: 0px;
     .services_left h1 {
       font-size: 16px;
     }
     .services_middle_detail {
-      margin-top: -10px;
+      margin-top: -20px;
+    }
+    .services_right {
+      margin-top: 5px;
+      height: auto;
+      overflow-x: hidden;
+      padding: 0px;
     }
   }
   .about {
@@ -242,6 +255,18 @@ footer {
     }
   }
 
+  .services {
+    .services_left h1 {
+      font-size: 22px;
+    }
+    .services_right {
+      .services_points_wrapper {
+        width: 70%;
+        margin: auto;
+      }
+    }
+  }
+
   .services_header,
   .about_header {
     width: 60%;
@@ -275,6 +300,25 @@ footer {
     }
     img {
       top: 80px;
+    }
+  }
+  .services {
+    .services_left h1,
+    .services_middle h1 {
+      font-size: 24px;
+    }
+    .services_middle_detail {
+      margin-top: 0px;
+    }
+    .services_right {
+      height: 175px;
+      font-size: 18px;
+    }
+    .services_right {
+      .services_points_wrapper {
+        width: 50%;
+        margin: auto;
+      }
     }
   }
   .services_header,
@@ -316,6 +360,26 @@ footer {
         top: 370px;
         left: 100px;
       }
+    }
+  }
+  .services {
+    .services_left h1,
+    .services_middle h1 {
+      font-size: 34px;
+    }
+    .services_middle {
+      margin-top: 75px;
+    }
+    .services_right {
+      height: 250px;
+      .services_points_wrapper {
+        width: 100%;
+        margin-top: 10px;
+      }
+    }
+    .services_points_wrapper {
+      width: 100%;
+      margin: auto;
     }
   }
 }

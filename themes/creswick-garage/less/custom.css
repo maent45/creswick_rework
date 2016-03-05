@@ -2,12 +2,15 @@
 body {
   font-family: 'Titillium Web', sans-serif;
 }
-#scroll-bar-style::-webkit-scrollbar {
-  background: red;
+.services_right::-webkit-scrollbar {
+  width: 6px;
 }
-#scroll-bar-style::-webkit-scrollbar-thumb {
+.services_right::-webkit-scrollbar-thumb {
   border-radius: 10px;
   background-color: #f03034 !important;
+}
+span.error {
+  color: #f03034;
 }
 /* NAVBAR */
 .navbar .navbar-nav {
@@ -79,6 +82,10 @@ body {
   border-bottom: 2px solid #f03034;
   padding-bottom: 10px;
 }
+.services .services_left h1:hover {
+  color: #333;
+  cursor: pointer;
+}
 .services .services_middle {
   text-align: center;
 }
@@ -89,7 +96,6 @@ body {
 .services .services_right {
   margin-top: 5%;
   height: 315px;
-  overflow: scroll;
   overflow-x: hidden;
 }
 .services .services_points_wrapper {
@@ -174,11 +180,20 @@ footer {
   .banner img {
     top: 80px;
   }
+  .services {
+    padding-bottom: 0px;
+  }
   .services .services_left h1 {
     font-size: 16px;
   }
   .services .services_middle_detail {
-    margin-top: -10px;
+    margin-top: -20px;
+  }
+  .services .services_right {
+    margin-top: 5px;
+    height: auto;
+    overflow-x: hidden;
+    padding: 0px;
   }
   .about .container img {
     margin-top: 3%;
@@ -205,6 +220,13 @@ footer {
   }
   .banner .carousel {
     height: 340px;
+  }
+  .services .services_left h1 {
+    font-size: 22px;
+  }
+  .services .services_right .services_points_wrapper {
+    width: 70%;
+    margin: auto;
   }
   .services_header,
   .about_header {
@@ -237,6 +259,21 @@ footer {
   }
   .banner img {
     top: 80px;
+  }
+  .services .services_left h1,
+  .services .services_middle h1 {
+    font-size: 24px;
+  }
+  .services .services_middle_detail {
+    margin-top: 0px;
+  }
+  .services .services_right {
+    height: 175px;
+    font-size: 18px;
+  }
+  .services .services_right .services_points_wrapper {
+    width: 50%;
+    margin: auto;
   }
   .services_header,
   .about_header {
@@ -272,5 +309,23 @@ footer {
   .banner .carousel .carousel-caption {
     top: 370px;
     left: 100px;
+  }
+  .services .services_left h1,
+  .services .services_middle h1 {
+    font-size: 34px;
+  }
+  .services .services_middle {
+    margin-top: 75px;
+  }
+  .services .services_right {
+    height: 250px;
+  }
+  .services .services_right .services_points_wrapper {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .services .services_points_wrapper {
+    width: 100%;
+    margin: auto;
   }
 }
