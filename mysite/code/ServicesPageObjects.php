@@ -37,9 +37,11 @@ class ServicesPageObjects extends DataObject {
         return $fields;
     }
 
+    private static $singular_name = "Service";
+
     private static $summary_fields = array (
         'Service_title' => 'Service',
-        'Service_details' => 'Details.Summary'
+        'Service_details.Summary' => 'Details'
     );
 
 }

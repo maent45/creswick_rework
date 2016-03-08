@@ -44,4 +44,17 @@ class AboutPageObjects extends DataObject {
         return $fields;
     }
 
+    public function getGridThumbnail() {
+        if($this->Info_image()->exists()) {
+            return $this->Info_image()->SetWidth(100);
+        }
+
+        return "(no image)";
+    }
+
+    private static $summary_fields = array (
+        'Info_details.Summary' => 'Content',
+        'GridThumbnail' => 'Image'
+    );
+
 }

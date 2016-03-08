@@ -2,10 +2,6 @@
 
 class BannerPage extends Page {
 
-    private static $db = array (
-        'text' => 'Varchar'
-    );
-
     private static $has_many = array (
         'BannerImages' => 'BannerPageObjects'
     );
@@ -14,11 +10,10 @@ class BannerPage extends Page {
         $fields = parent::getCMSFields();
 
         $fields->removeFieldFromTab('Root.Main', 'Content');
-        $fields->addFieldToTab('Root.Banners', TextField::create('text'));
 
         $fields->addFieldToTab('Root.Banners', GridField::create(
             'BannerImages',
-            'Slider Images',
+            'Banner Images',
             $this->BannerImages(),
             GridFieldConfig_RecordEditor::create()
         ));

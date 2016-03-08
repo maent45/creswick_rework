@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    //remove 'banner' link from navbar
+    // remove 'banner' link from navbar
     $('li.BannerPage').css("display", "none");
 
     // only show first elements onload
@@ -44,6 +44,15 @@ $(document).ready(function() {
                 }
             });
         });
+    });
+
+    // disable zoom on map
+    $('.map').click(function () {
+        $('.map iframe').css("pointer-events", "auto");
+    });
+
+    $('.map').mouseleave(function() {
+        $('.map iframe').css("pointer-events", "none");
     });
 
 });

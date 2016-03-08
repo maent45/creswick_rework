@@ -5,9 +5,11 @@
             <% loop $BannerImages %>
                 <div class="item<% if $Pos=1 %> active<% else %><% end_if %>">
                     $Banner_image
-                    <div class="carousel-caption">
-                        $Banner_content
-                    </div>
+                    <% if $Banner_content %>
+                        <div class="carousel-caption">
+                            $Banner_content
+                        </div>
+                    <% end_if %>
                 </div>
             <% end_loop %>
         </div>

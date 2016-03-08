@@ -2,6 +2,10 @@
 body {
   font-family: 'Titillium Web', sans-serif;
 }
+/* MAPS */
+.map iframe {
+  pointer-events: none;
+}
 .services_right::-webkit-scrollbar {
   width: 6px;
 }
@@ -11,6 +15,26 @@ body {
 }
 span.error {
   color: #f03034;
+}
+/* ADMIN LOGIN FORM */
+#MemberLoginForm_LoginForm {
+  background: #333;
+  margin-top: 20%;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 10%;
+  border-radius: 10px;
+  font-size: 18px;
+  color: white;
+}
+#MemberLoginForm_LoginForm input.action {
+  background: #f03034;
+  border-radius: 5px;
+  padding: 10px;
+  border: 0px;
+}
+#MemberLoginForm_LoginForm input.text {
+  color: black;
 }
 /* NAVBAR */
 .navbar .navbar-nav {
@@ -66,8 +90,7 @@ span.error {
 }
 .banner .carousel-caption h1,
 .banner .carousel-caption h2,
-.banner .carousel-caption h3,
-.banner .carousel-caption h4 {
+.banner .carousel-caption h3 {
   color: #f03034;
 }
 /* SERVICES */
@@ -123,7 +146,6 @@ footer {
   padding: 40px;
   top: 0px;
   color: #777777;
-  text-align: center;
 }
 /* FORM */
 .UserDefinedForm > .container h1,

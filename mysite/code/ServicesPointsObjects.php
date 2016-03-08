@@ -21,6 +21,8 @@ class ServicesPointsObjects extends DataObject {
         return $fields;
     }
 
+    private static $singular_name = "Services Included";
+
     private static $summary_fields = array (
         'Service_covered' => 'Services Covered'
     );

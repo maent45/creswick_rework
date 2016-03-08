@@ -11,6 +11,8 @@ class BannerPageObjects extends DataObject {
         'BannerPage' => 'BannerPage'
     );
 
+    private static $singular_name = "Banner Image";
+
     public function getCMSFields() {
         $fields = FieldList::create(
             $banner_img = UploadField::create('Banner_image', 'Banner Image'),
